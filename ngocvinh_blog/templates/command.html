@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for row in rows %}
+		<a class="list-group-item list-group-item-light" href={{ row[1]}}>{{ row[0] }}</a>
+	{% endfor %}
+{% endblock %}
